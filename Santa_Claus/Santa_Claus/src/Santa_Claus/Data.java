@@ -6,20 +6,20 @@ Jesus Eduardo Gonzalez Martinez
 package Santa_Claus;
 import java.util.concurrent.Semaphore;
 
-public class Data {
-    
+public class Data{
+    #Variables principales
     private int duendes = 0;
     private int renos = 0;
     
     final private int TOTAL_RENOS=9;
     final private int GRUPO_DUENDE=3;
-    
+    #Definicion de semaforos
     private Semaphore mutex = new Semaphore(1);
     private Semaphore semSanta = new Semaphore(0);
     private Semaphore semDuendes = new Semaphore(0);
     private Semaphore semRenos = new Semaphore(0);
 
-    public int getTOTAL_RENOS() {
+    public int getTOTAL_RENOS() { #Obtencion de variables
         return TOTAL_RENOS;
     }
     
